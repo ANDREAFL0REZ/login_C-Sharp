@@ -19,11 +19,11 @@ namespace login
 
         private void btnsalir_Click(object sender, EventArgs e)
         {
-            //si no posible resultado cuando el usuario se le pregunta si desea salir
+            // resultado cuando el usuario hace click en salir, se le pregunta si desea salir
             DialogResult resultado = MessageBox.Show("¿Seguro deseas SALIR?","Confirmar salida",MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if(resultado == DialogResult.Yes)
             {
-                //codigo para terminar la aplicacion
+                //codigo para cerrar la aplicacion
                 Application.Exit();
             }
 

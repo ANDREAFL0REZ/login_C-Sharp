@@ -112,6 +112,7 @@
             this.label5.Size = new System.Drawing.Size(56, 21);
             this.label5.TabIndex = 26;
             this.label5.Text = "label5";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // timer1
             // 

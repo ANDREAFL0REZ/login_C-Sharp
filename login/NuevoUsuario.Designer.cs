@@ -62,7 +62,7 @@
             this.label1.Size = new System.Drawing.Size(263, 35);
             this.label1.TabIndex = 10;
             this.label1.Text = "Nuevo Usuario :)";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+          
             // 
             // label2
             // 
@@ -73,7 +73,7 @@
             this.label2.Size = new System.Drawing.Size(281, 35);
             this.label2.TabIndex = 12;
             this.label2.Text = "Nombre Completo";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+
             // 
             // label3
             // 
@@ -84,7 +84,7 @@
             this.label3.Size = new System.Drawing.Size(258, 35);
             this.label3.TabIndex = 13;
             this.label3.Text = "Nombre Usuario";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+      
             // 
             // label4
             // 
@@ -95,7 +95,7 @@
             this.label4.Size = new System.Drawing.Size(312, 35);
             this.label4.TabIndex = 14;
             this.label4.Text = "Contraseña Usuario";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+          
             // 
             // txtContrasena
             // 
@@ -104,7 +104,7 @@
             this.txtContrasena.Name = "txtContrasena";
             this.txtContrasena.Size = new System.Drawing.Size(168, 34);
             this.txtContrasena.TabIndex = 15;
-            this.txtContrasena.TextChanged += new System.EventHandler(this.txtContrasena_TextChanged);
+          
             // 
             // txtUsuario
             // 
@@ -113,7 +113,7 @@
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(168, 34);
             this.txtUsuario.TabIndex = 16;
-            this.txtUsuario.TextChanged += new System.EventHandler(this.txtUsuario_TextChanged);
+
             // 
             // txtNomCompleto
             // 
@@ -122,7 +122,7 @@
             this.txtNomCompleto.Name = "txtNomCompleto";
             this.txtNomCompleto.Size = new System.Drawing.Size(168, 34);
             this.txtNomCompleto.TabIndex = 17;
-            this.txtNomCompleto.TextChanged += new System.EventHandler(this.txtNomCompleto_TextChanged);
+       
             // 
             // btnagregar
             // 
@@ -144,7 +144,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 19;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+       
             // 
             // NuevoUsuario
             // 
