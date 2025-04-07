@@ -10,40 +10,33 @@ using System.Windows.Forms;
 
 namespace login
 {
-    public partial class Inicio: Form
+    public partial class Inicio: BaseForm
     {
-        private int conteo; // Contador para la barra de
+        private int conteo;
         public Inicio()
         {
             InitializeComponent();
-            conteo = 0;  // Inicializa el contador en 0
+            conteo = 0;
         }
 
         private void Inicio_Load(object sender, EventArgs e)
         {
-            timer1.Enabled = true;// Activa el temporizador
-
+            timer1.Enabled = true;
             label5.BackColor = Color.White;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            conteo+=5; // Incrementa el valor del contador en 5
-            label5.Text = conteo.ToString() + "%"; // Muestra el porcentaje de carga
-            progressBar1.Value = conteo;// Actualiza el valor de la barra de progreso
-            if (conteo == 100) // Cuando llega al 100%
+            conteo+=25;
+            label5.Text = conteo.ToString() + "%";
+            progressBar1.Value = conteo;
+            if(conteo == 100)
             {
-                timer1.Enabled = false;// Detiene el temporizador
-                Form1 llamar = new Form1();// Abre el formulario principal
-
+                timer1.Enabled = false;
+                Form1 llamar = new Form1();
                 llamar.Show();
-                this.Hide();// Oculta la ventana actual
+                this.Hide();
             }
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

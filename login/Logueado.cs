@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace login
 {
-    public partial class Logueado: Form
+    public partial class Logueado: BaseForm
     {
         public Logueado()
         {
@@ -19,11 +19,11 @@ namespace login
 
         private void btnsalir_Click(object sender, EventArgs e)
         {
-            // resultado cuando el usuario hace click en salir, se le pregunta si desea salir
+            //si no posible resultado cuando el usuario se le pregunta si desea salir
             DialogResult resultado = MessageBox.Show("¿Seguro deseas SALIR?","Confirmar salida",MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if(resultado == DialogResult.Yes)
             {
-                //codigo para cerrar la aplicacion
+                //codigo para terminar la aplicacion
                 Application.Exit();
             }
 

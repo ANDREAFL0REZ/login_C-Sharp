@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace login
 {
-    public partial class Form1: Form
+    public partial class Form1: BaseForm
     {
         public Form1()
         {
@@ -69,6 +69,10 @@ namespace login
             NuevoUsuario newUser = new NuevoUsuario();
             newUser.Show();
             this.Hide();
+        }
+
+        private void linkLBL2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
         }
     }
 }

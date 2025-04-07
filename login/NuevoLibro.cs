@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace login
 {
-    public partial class NuevoLibro : Form
+    public partial class NuevoLibro : BaseForm
     {
         MySqlConnection conexionDB = Conexion.conexion();
         public NuevoLibro()
@@ -38,7 +38,7 @@ namespace login
 
             string consulta = "INSERT INTO libros" + " (titulo, autor, editorial, estado)" + "VALUES ('" + titulo + "','" + autor + "','" + editorial + "','" + estado + "')";
 
-            
+            //impulso paar que vaya a la db
             MySqlCommand comando = new MySqlCommand(consulta, conexionDB);
             try
             {

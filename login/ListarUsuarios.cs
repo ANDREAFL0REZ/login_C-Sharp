@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace login
 {
-    public partial class ListarUsuarios: Form
+    public partial class ListarUsuarios: BaseForm
     {
         public ListarUsuarios()
         {
